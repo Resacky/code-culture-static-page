@@ -27,16 +27,20 @@ export default function FourButtons() {
     return (
         <div className={styles.fourButtons}>
             <Link href="/">
-                <Image className={`${styles.homepage} ${isHomepageClicked ? styles.imageClicked : ''}`}  src={isHomepageClicked ? greenHomepage : homepage} alt="" draggable="false" onClick={handleHomepageClick} />
+                <Image className={`${styles.homepage} ${isHomepageClicked ? styles.imageClicked : ''}`}  
+                src={isHomepageClicked ? greenHomepage : homepage} alt="" draggable="false" onClick={handleHomepageClick} />
             </Link>
             <Link href="/">
-                <Image className={`${styles.play} ${isPlayClicked ? styles.imageClicked : ''}`}  src={isPlayClicked ? greenPlay : play} alt="" draggable="false" onClick={handlePlayClick} />
+                <Image className={`${styles.play} ${isPlayClicked ? styles.imageClicked : ''}`}  
+                src={isPlayClicked ? greenPlay : play} alt="" draggable="false" onClick={handlePlayClick} />
             </Link>
             <Link href="/">
-                <Image className={`${styles.code} ${isCodeClicked ? styles.imageClicked : ''}`} src={isCodeClicked ? greenCode : code} alt="" draggable="false" onClick={handleCodeClick} />
+                <Image className={`${styles.code} ${isCodeClicked ? styles.imageClicked : ''}`} 
+                src={isCodeClicked ? greenCode : code} alt="" draggable="false" onClick={handleCodeClick} />
             </Link>
             <Link href="/">
-                <Image className={`${styles.group} ${isGroupClicked ? styles.imageClicked : ''}`} src={isGroupClicked ? greenGroup : group} alt="" draggable="false" onClick={handleGroupClick} />
+                <Image className={`${styles.group} ${isGroupClicked ? styles.imageClicked : ''}`} 
+                src={isGroupClicked ? greenGroup : group} alt="" draggable="false" onClick={handleGroupClick} />
             </Link>
         </div>
     );

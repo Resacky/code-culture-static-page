@@ -1,0 +1,33 @@
+.footerContainer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 380px;
+    background-color: #1A1E22;
+}
+
+.agreementLink {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.agreementLink:hover {
+    color: #4B5661;
+}
+
+.agreementText,
+.copyright {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #B7B7B7;
+    padding: 10px 40px;
+}
+
+.copyright {
+    margin-bottom: 15px;
+}

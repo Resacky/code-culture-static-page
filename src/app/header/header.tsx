@@ -5,8 +5,9 @@ import Image from 'next/image';
 import SearchBox from './searchBox';
 import FourButtons from './fourButtons';
 import logo from '../../assets/logo.png';
+import SettingButtons from './settingButtons';
 
-export default function header() {
+export default function Header() {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
@@ -20,7 +21,7 @@ export default function header() {
                     <FourButtons />
                 </div>
                 <div className={styles.thirdContainer}>
-                    
+                    <SettingButtons />
                 </div>
             </nav>
         </header>

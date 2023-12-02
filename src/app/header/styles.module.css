@@ -62,8 +62,7 @@
 
 .secondContainer {}
 
-.fourButtons {
-}
+.fourButtons {}
 
 .homepage,
 .play,
@@ -100,4 +99,37 @@
 .imageClicked {
     border-bottom: 2px solid green;
     transition: border-bottom 0.3s ease;
+}
+
+.thirdContainer {
+    margin-right: 40px;
+}
+
+.fiveButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.settingContainer {
+    width: 60px;
+    height: 60px;
+    background-color: #4B5661;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messaging,
+.notifications,
+.settings,
+.profile {
+    height: 38px;
+    width: 38px;
+}
+
+.profile {
+    margin-left: 5px;
 }

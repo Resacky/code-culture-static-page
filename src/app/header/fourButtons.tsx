@@ -8,10 +8,10 @@ import homepage from '../../assets/homepage.svg'
 import play from '../../assets/media.svg'
 import code from '../../assets/code.svg'
 import group from '../../assets/group.svg'
-import greenHomepage from '../../assets/green_homepage.svg'
-import greenPlay from '../../assets/green_play-button.svg'
-import greenCode from '../../assets/green_code.svg'
-import greenGroup from '../../assets/green_group.svg'
+import greenHomepage from '../../assets/homepage-green.svg'
+import greenPlay from '../../assets/media-green.svg'
+import greenCode from '../../assets/code-green.svg'
+import greenGroup from '../../assets/group-green.svg'
 
 export default function FourButtons() {
     const [isHomepageClicked, setHomepageClicked] = useState(false);

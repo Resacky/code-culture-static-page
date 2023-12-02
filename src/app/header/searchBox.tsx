@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import magnifyingGlass from '../../assets/search.svg';
 
-export default function searchBox() {
+export default function SearchBox() {
     return (
         <div className={styles.searchContainer}>
             <Image src={magnifyingGlass} alt="" className={styles.searchIcon} draggable="false" />

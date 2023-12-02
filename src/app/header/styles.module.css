@@ -1,7 +1,7 @@
 .header {
     background: #1A1E22;
     padding: 0rem;
-    border-bottom: white;
+    border-bottom: #4B5661;
 }
 
 .logo {
@@ -99,6 +99,7 @@
 .imageClicked {
     border-bottom: 2px solid green;
     transition: border-bottom 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .thirdContainer {

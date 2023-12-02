@@ -2,10 +2,10 @@ import styles from './styles.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import SearchBox from './searchBox';
-import FourButtons from './fourButtons';
+import SearchBox from './SearchBox';
+import FourButtons from './FourButtons';
 import logo from '../../assets/logo.png';
-import SettingButtons from './settingButtons';
+import SettingButtons from './SettingButtons';
 
 export default function Header() {
     return (

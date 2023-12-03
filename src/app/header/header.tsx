@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 import SearchBox from './SearchBox';
 import FourButtons from './FourButtons';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import SettingButtons from './SettingButtons';
-import menuVertical from '../../assets/menu-vertical.svg'
-import greenMenuVertical from '../../assets/green-menu-vertical.svg'
+import menuVertical from '../../assets/bar.svg'
+import greenMenuVertical from '../../assets/bar-green.svg'
 import { useState } from 'react';
 
 export default function Header() {

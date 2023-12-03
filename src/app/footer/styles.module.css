@@ -2,7 +2,7 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 380px;
+    width: 400px;
     background-color: #1A1E22;
 }
 
@@ -20,7 +20,7 @@
 .agreementText,
 .copyright {
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
     line-height: 21px;
     letter-spacing: 0em;
@@ -29,5 +29,5 @@
 }
 
 .copyright {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }

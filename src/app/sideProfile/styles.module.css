@@ -68,3 +68,13 @@
     width: 60px;
     height: 60px;
 }
+
+@media (max-width: 840px) {
+    .text {
+        display: none;
+    }
+
+    .sideProfile, .container {
+        width: 60px;
+    }
+}

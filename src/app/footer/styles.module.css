@@ -31,3 +31,11 @@
 .copyright {
     margin-bottom: 10px;
 }
+
+@media (max-width: 1555px) {
+    .footerContainer {
+        display: flex;
+        height: 100px;
+        width: 500px;
+    }
+}

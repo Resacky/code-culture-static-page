@@ -25,30 +25,22 @@ export default function SettingButtons() {
     const handleProfileClick = () => setProfileClicked(!isProfileClicked);
 
     return (
-        <div className={styles.fiveButtons}>
-            <Link href="/">
-                <div className={styles.settingContainer}>
-                    <Image className={styles.messaging} src={isMessagingClicked ? greenMessaging : messaging} 
-                    alt='' draggable="false" onClick={handleMessagingClick}/>
-                </div>
+        <div className={styles.settingButtons}>
+            <Link className={styles.settingContainer} href="/" onClick={handleMessagingClick}>
+                <Image className={styles.messaging} src={isMessagingClicked ? greenMessaging : messaging}
+                    alt='' draggable="false" />
             </Link>
-            <Link href="/">
-                <div className={styles.settingContainer}>
-                    <Image className={styles.notifications} src={isNotificationsClicked ? greenNotifications : notifications} 
-                    alt='' draggable="false" onClick={handleNotificationsClick}/>
-                </div>
+            <Link className={styles.settingContainer} href="/" onClick={handleNotificationsClick}>
+                <Image className={styles.notifications} src={isNotificationsClicked ? greenNotifications : notifications}
+                    alt='' draggable="false" />
             </Link>
-            <Link href="/">
-                <div className={styles.settingContainer}>
-                    <Image className={styles.settings} src={isSettingsClicked ? greenSettings : settings} 
-                    alt='' draggable="false" onClick={handleSettingsClick}/>
-                </div>
+            <Link className={styles.settingContainer} href="/" onClick={handleSettingsClick}>
+                <Image className={styles.settings} src={isSettingsClicked ? greenSettings : settings}
+                    alt='' draggable="false" />
             </Link>
-            <Link href="/">
-                <div className={styles.settingContainer}>
-                    <Image className={styles.profile} src={isProfileClicked ? greenProfile : profile} 
-                    alt='' draggable="false" onClick={handleProfileClick}/>
-                </div>
+            <Link className={styles.settingContainer} href="/" onClick={handleProfileClick}>
+                <Image className={styles.profile} src={isProfileClicked ? greenProfile : profile}
+                    alt='' draggable="false" />
             </Link>
         </div>
     );

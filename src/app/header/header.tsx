@@ -31,9 +31,10 @@ export default function Header() {
                 <div className={styles.thirdContainer}>
                     <SettingButtons />
                 </div>
+                {/* This div is for responsiveness purposes, hides the button until the screen shrinks to 840px */}
                 <div className={styles.collapsedButton}>
-                    <Link href="/">
-                        <Image className={styles.menuVertical} src={isMenuClicked ? greenMenuVertical : menuVertical} alt="" draggable="false" onClick={handleMenuClick} />
+                    <Link className={styles.settingContainer} href="/" onClick={handleMenuClick}>
+                        <Image className={styles.menuVertical} src={isMenuClicked ? greenMenuVertical : menuVertical} alt="" draggable="false" />
                     </Link>
                 </div>
             </nav>

@@ -9,7 +9,7 @@
 }
 
 .collapsedSideProfile {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-left: 50px;
@@ -121,7 +121,7 @@
     height: 60px;
 }
 
-.collapse {
+.collapse, .collapseRotate {
     width: 30px;
     height: 30px;
     border-radius: 10px;
@@ -132,13 +132,22 @@
     transition: all 0.3s ease;
 }
 
+.collapse {
+}
+
 .collapse:hover {
     opacity: 100%;
     transition: all 0.3s ease;
 }
 
+.collapseRotate {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 840px) {
-    .text, .collapse {
+
+    .text,
+    .collapse {
         display: none;
     }
 

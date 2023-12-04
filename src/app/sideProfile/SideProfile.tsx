@@ -75,7 +75,7 @@ export default function SideProfile() {
                 </Link>
             </div>
             <div className={styles.rightGrid}>
-                <Image className={styles.collapse} src={collapse} alt={''} onClick={toggleCollapse} />
+                <Image className={isCollapsed ? styles.collapseRotate : styles.collapse} src={collapse} alt={''} onClick={toggleCollapse} />
             </div>
         </div>
     );

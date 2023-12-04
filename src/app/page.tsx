@@ -10,6 +10,8 @@ export default function StaticPage() {
         <div className={styles.box}>
             <Header />
             <SideProfile />
+            {/* this is where the body of the site would go, 
+            and would vary depending on what the user clicks */}
             <Footer />
         </div>
     );

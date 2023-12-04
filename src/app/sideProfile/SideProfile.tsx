@@ -23,51 +23,51 @@ export default function SideProfile() {
     };
 
     return (
-        <div className={`${styles.sideProfile} ${isCollapsed ? styles.collapsed : ''}`}>
-            <div className={`${styles.leftGrid} ${isCollapsed ? styles.collapsedGrid : ''}`}>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+        <div className={isCollapsed ? styles.collapsedSideProfile : styles.sideProfile}>
+            <div className={isCollapsed ? styles.collapsedGrid : styles.leftGrid}>
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.profile}>
                         <Image src={profile} alt="" draggable="false" className={styles.profileImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Profile </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={groupColored} alt="" draggable="false" className={styles.groupImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Coder Companion </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={post} alt="" draggable="false" className={styles.groupImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Post Something </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={question} alt="" draggable="false" className={styles.groupImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Questions </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={media} alt="" draggable="false" className={styles.mediaImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Media </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={events} alt="" draggable="false" className={styles.groupImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Events </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={bookmark} alt="" draggable="false" className={styles.groupImage} />
                     </div>
                     <p className={`${styles.text} ${isCollapsed ? styles.collapsedText : ''}`}> Bookmarks </p>
                 </Link>
-                <Link className={`${isCollapsed ? styles.collapsedContainer : styles.container}`} href="/" >
+                <Link className={isCollapsed ? styles.collapsedContainer : styles.container} href="/" >
                     <div className={styles.groupProfile}>
                         <Image src={logo} alt="" draggable="false" className={styles.logo} />
                     </div>

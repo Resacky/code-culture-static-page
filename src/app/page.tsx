@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-import Header from "./header/Header";
-import Footer from './footer/Footer';
+import Header from "./Header/Header";
+import Footer from './Footer/Footer';
 import SideProfile from './sideProfile/SideProfile';
 
 export default function StaticPage() {

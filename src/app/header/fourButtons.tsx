@@ -14,33 +14,50 @@ import greenCode from '../../assets/code-green.svg'
 import greenGroup from '../../assets/group-green.svg'
 
 export default function FourButtons() {
-    const [isHomepageClicked, setHomepageClicked] = useState(false);
-    const [isPlayClicked, setPlayClicked] = useState(false);
-    const [isCodeClicked, setCodeClicked] = useState(false);
-    const [isGroupClicked, setGroupClicked] = useState(false);
 
-    const handleHomepageClick = () => setHomepageClicked(!isHomepageClicked);
-    const handlePlayClick = () => setPlayClicked(!isPlayClicked);
-    const handleCodeClick = () => setCodeClicked(!isCodeClicked);
-    const handleGroupClick = () => setGroupClicked(!isGroupClicked);
+    const [activeButton, setActiveButton] = useState('homepage');
+
+    const handleButtonClick = (buttonName: string) => {
+        setActiveButton(buttonName);
+    };
 
     return (
         <div className={styles.fourButtons}>
             <Link href="/">
-                <Image className={`${styles.homepage} ${isHomepageClicked ? styles.imageClicked : ''}`}  
-                src={isHomepageClicked ? greenHomepage : homepage} alt="" draggable="false" onClick={handleHomepageClick} />
+                <Image
+                    className={`${styles.homepage} ${activeButton === 'homepage' ? styles.imageClicked : ''}`}
+                    src={activeButton === 'homepage' ? greenHomepage : homepage}
+                    alt=""
+                    draggable="false"
+                    onClick={() => handleButtonClick('homepage')}
+                />
             </Link>
             <Link href="/">
-                <Image className={`${styles.play} ${isPlayClicked ? styles.imageClicked : ''}`}  
-                src={isPlayClicked ? greenPlay : play} alt="" draggable="false" onClick={handlePlayClick} />
+                <Image
+                    className={`${styles.play} ${activeButton === 'play' ? styles.imageClicked : ''}`}
+                    src={activeButton === 'play' ? greenPlay : play}
+                    alt=""
+                    draggable="false"
+                    onClick={() => handleButtonClick('play')}
+                />
             </Link>
             <Link href="/">
-                <Image className={`${styles.code} ${isCodeClicked ? styles.imageClicked : ''}`} 
-                src={isCodeClicked ? greenCode : code} alt="" draggable="false" onClick={handleCodeClick} />
+                <Image
+                    className={`${styles.code} ${activeButton === 'code' ? styles.imageClicked : ''}`}
+                    src={activeButton === 'code' ? greenCode : code}
+                    alt=""
+                    draggable="false"
+                    onClick={() => handleButtonClick('code')}
+                />
             </Link>
             <Link href="/">
-                <Image className={`${styles.group} ${isGroupClicked ? styles.imageClicked : ''}`} 
-                src={isGroupClicked ? greenGroup : group} alt="" draggable="false" onClick={handleGroupClick} />
+                <Image
+                    className={`${styles.group} ${activeButton === 'group' ? styles.imageClicked : ''}`}
+                    src={activeButton === 'group' ? greenGroup : group}
+                    alt=""
+                    draggable="false"
+                    onClick={() => handleButtonClick('group')}
+                />
             </Link>
         </div>
     );

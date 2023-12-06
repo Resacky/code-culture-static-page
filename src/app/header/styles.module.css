@@ -130,6 +130,23 @@
     align-items: center;
 }
 
+.settingContainer::after {
+    content: attr(title); /* This will be your tooltip text */
+    position: absolute;
+    bottom: 100%; /* Position it above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333; /* Background color of the tooltip */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1; /* Make sure it's above other elements */
+}
+
 .settingContainer:hover {
     transition: all 0.3s ease;
     background-color: rgba(252, 252, 252, 0.20);

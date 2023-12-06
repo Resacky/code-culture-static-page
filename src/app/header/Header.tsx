@@ -3,10 +3,10 @@ import styles from './styles.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import SearchBox from './SearchBox.tsx';
-import FourButtons from './FourButtons.tsx';
+import SearchBox from './SearchBox';
+import FourButtons from './FourButtons';
 import logo from '../../assets/logo.svg';
-import SettingButtons from './SettingButtons.tsx';
+import SettingButtons from './SettingButtons';
 import menuVertical from '../../assets/bar.svg'
 import greenMenuVertical from '../../assets/bar-green.svg'
 import { useState } from 'react';
